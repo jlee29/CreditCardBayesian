@@ -1,11 +1,11 @@
-from pebl import data
-from pebl.learner import greedy
+import os
+import numpy as np
+import pandas as pd
+from pomegranate import *
 
-print('HELl0')
-dataset = data.fromfile("data.csv")
-dataset.discretize()
-print(dataset)
-dataset.discretize()
-learner = greedy.GreedyLearner(dataset, max_iterations=10000)
-ex1result = learner.run()
-ex1result.tohtml("example1-result")
+labelpath = os.path.join('./data/smaller.csv')
+X = np.array(pd.read_csv(labelpath))
+X_train = X[24000]
+X_test = X[6000]
+model = BayesianNetwork.from_samples(X_train, algorithm='exact')
+print('hi')
