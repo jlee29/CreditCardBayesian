@@ -1,4 +1,4 @@
-"SEX,discrete(2)","EDUCATION,discrete(7)","MARRIAGE,discrete(4)","PAY_0,discrete(11)","PAY_2,discrete(11)","PAY_3,discrete(11)","PAY_4,discrete(11)","PAY_5,discrete(11)","Default,class(0,1)"
+"SEX","EDUCATION","MARRIAGE","PAY_0","PAY_2","PAY_3","PAY_4","PAY_5","Default"
 2.0,2.0,1.0,2.0,2.0,-1.0,-1.0,-2.0,1.0
 2.0,2.0,2.0,-1.0,2.0,0.0,0.0,0.0,1.0
 2.0,2.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
